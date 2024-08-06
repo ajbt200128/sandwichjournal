@@ -1,0 +1,29 @@
+#+hugo_base_dir: ../
+
+* DONE My first post :tag1:tag2:
+CLOSED:<2024-08-02 Fri>
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:END:
+#+begin_description
+Here is my *post summary*.
+
+And this can be over /multiple lines/ too!
+#+end_description
+This is my post body
+** Hello
+aaa
+*** Subheading
+bbb
+
+
+* TODO My second post :tag1:@category2:
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-second-post
+:EXPORT_DATE: <2024-08-02 Fri>
+:END:
+This is my post body
+** Hello
+aaa
+*** Subheading
+bbb
