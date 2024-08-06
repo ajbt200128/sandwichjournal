@@ -1,0 +1,53 @@
+{{ define "main" }}
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">
+				{{ .Title }}
+			</h1>
+				{{ if (and (isset .Params "location") (isset .Params "location_href")) }}
+				<div class="meta">
+					<a href={{.Params.location_href}}
+					target="_blank">{{.Params.location}}</a>
+			    </div>
+				{{ end }}
+			{{ if (and (isset .Params "won") (isset .Params "lost")) }}
+			<div class="rating">
+				{{ range .Params.won }}{{ . }}{{ end }}<span class="empty">{{ range .Params.lost }}{{ . }}{{ end }}</span>
+			</div>
+			{{ end }}
+			{{ if .Date }}
+			<div class="meta">Reviewed on {{ dateFormat "January 2, 2006" .Date }}{{ if .Draft
+			}},  <span class="draft-label">DRAFT</span> {{ end }}</div>
+			{{ end }}
+		</div>
+
+		<section class="body">
+			{{ .Content }}
+		</section>
+
+		<div class="post-tags">
+			{{ if ne .Type "page" }}
+			{{ if gt .Params.tags 0 }}
+			<nav class="nav tags">
+					{{ range .Params.tags }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+			</nav>
+            <br/>
+			{{ end }}
+			{{ end }}
+		</div>
+
+		{{- $.Scratch.Set "isDisqus" true -}}
+		<!-- Check if disqus short name is given -->
+		{{ if not .Site.Config.Services.Disqus.Shortname }}
+		{{- $.Scratch.Set "isDisqus" false -}}
+		{{ end }}
+
+		{{- if eq ($.Scratch.Get "isDisqus") true -}}
+		{{- partial "disqus.html" . -}}
+		{{- end -}}
+	</article>
+</main>
+{{ end }}

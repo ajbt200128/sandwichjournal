@@ -1,18 +1,31 @@
 #+hugo_base_dir: ../
 
-* DONE My first post :tag1:tag2:
-CLOSED:<2024-08-02 Fri>
+* About
+:PROPERTIES:
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_SECTION: /
+:EXPORT_HUGO_MENU: :menu main :weight 3
+:END:
+
+What is Sandwich Journal?
+* My first post :tag1:tag2:3sandwich:
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-first-post
+:EXPORT_DATE: <2024-08-02 Fri>
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :won '(🥪🥪🥪) :lost '(🥪🥪) :location Test deli and street :location_href https://google.com/
 :END:
 #+begin_description
-Here is my *post summary*.
 
 And this can be over /multiple lines/ too!
 #+end_description
-This is my post body
-** Hello
+hello
+** Test Hello &
 aaa
+#+name: fig__clickable_image_that_opens_the_image
+#+caption: caption
+[[./images/test.jpg]]
+
+more!
 *** Subheading
 bbb
 
@@ -27,3 +40,21 @@ This is my post body
 aaa
 *** Subheading
 bbb
+
+* Notes
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: notes
+:END:
+** Rating Guidelines
+:PROPERTIES:
+:EXPORT_FILE_NAME: rating-guidelines
+:END:
+In general, we'll rate x/y sandwiches, but for different food, we may do a different icon
+
+Handicaps will be added for:
+ * ??
+
+Example way to set rating:
+#+begin_src org
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :won '(🥪🥪🥪) :lost '(🥪🥪) :location Test deli :location_href https://google.com/
+#+end_src

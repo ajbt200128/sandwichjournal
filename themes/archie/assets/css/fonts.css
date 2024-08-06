@@ -1,0 +1,79 @@
+@font-face {
+    font-display: swap;
+    font-family: "Cooper Regular";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-Regular.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper Medium";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-Medium.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper MediumItalic";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-MediumItalic.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper SemiBold";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-SemiBold.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper SemiBoldItalic";
+    font-style: italic;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-SemiBoldItalic.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper ExtraBold";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-ExtraBold.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper Black";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-Black.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper BlackItalic";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-BlackItalic.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-BlackItalic.ttf") format("truetype");
+}

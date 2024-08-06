@@ -1,7 +1,29 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Sandwich Journal'
 theme="archie"
+copyright = "© Austin Theriault"
+paginate=6 # articles per page
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/ajbt200128/sandwichjournal"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
 
 [markup.goldmark.renderer]
   unsafe = true
