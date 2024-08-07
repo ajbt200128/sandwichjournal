@@ -15,23 +15,27 @@
 				.Site.Params.mainSections }} {{ $paginator := .Paginate (where $pages
 				"Params.hidden" "ne" true) }} {{ range $paginator.Pages }}
 				<section class="list-item">
-					<h1 class="title">
-						<a href="{{ .RelPermalink}}">{{.Title}}</a>
-					</h1>
-					{{ if (and (isset .Params "won") (isset .Params "lost")) }}
-					<div class="rating small">
-						{{ range .Params.won }}{{ . }}{{ end }}<span class="empty"
-							>{{ range .Params.lost }}{{ . }}{{ end }}</span
-						>
+					{{ if (and (.Params.won) (.Params.lost)) }}
+					<div class="subtitle">
+						<div class="rating">
+							{{ .Params.won }}<span class="empty">{{ .Params.lost }}</span>
+						</div>
 					</div>
 					{{ end }}
-					<time
-						>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }}
-						<span class="draft-label">DRAFT</span> {{ end }}</time
-					>
-					<br />{{ template "partials/pagedescription.html" . }}
+					<div class="title">
+						<h1>
+							<a href="{{ .RelPermalink}}">{{.Title}}</a>
+						</h1>
+					</div>
+					{{ if .Params.location }}
+					<div class="subtitle meta">{{.Params.locationShort}}</div>
+					{{ end }} {{ if .Params.sandwich }}
+					<div class="meta">{{ .Params.sandwich }}</div>
+					{{ end }} {{ template "partials/pagedescription.html" . }}
 					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
 				</section>
+
+				<br />
 				{{ end }} {{ template "partials/paginator.html" . }}
 			</main>
 			{{ partial "footer.html" . }}

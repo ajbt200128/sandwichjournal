@@ -1,7 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://sandwichjournal.com/'
 languageCode = 'en-us'
 title = 'Sandwich Journal'
-theme="archie"
 copyright = "© Austin Theriault"
 paginate=6 # articles per page
 

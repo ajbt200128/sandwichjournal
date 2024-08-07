@@ -1,27 +1,43 @@
 {{ define "main" }}
 <main>
 	<article>
+		{{ if (and (.Params.won) (.Params.lost)) }}
+		<div class="rating">
+			{{.Params.won}}<span class="empty">{{.Params.lost}}</span>
+		</div>
+		{{ end }}
 		<div class="title">
 			<h1 class="title">
 				{{ .Title }}
 			</h1>
-				{{ if (and (isset .Params "location") (isset .Params "location_href")) }}
-				<div class="meta">
-					<a href={{.Params.location_href}}
-					target="_blank">{{.Params.location}}</a>
-			    </div>
-				{{ end }}
-			{{ if (and (isset .Params "won") (isset .Params "lost")) }}
-			<div class="rating">
-				{{ range .Params.won }}{{ . }}{{ end }}<span class="empty">{{ range .Params.lost }}{{ . }}{{ end }}</span>
-			</div>
-			{{ end }}
-			{{ if .Date }}
-			<div class="meta">Reviewed on {{ dateFormat "January 2, 2006" .Date }}{{ if .Draft
-			}},  <span class="draft-label">DRAFT</span> {{ end }}</div>
+		</div>
+		{{ if (and (.Params.location) (.Params.locationHref)) }}
+		<div class="meta">
+			<a href={{.Params.locationHref}}
+			target="_blank">{{.Params.location}}</a>
+		</div>
+		{{ end }}
+
+		{{ if .Params.sandwich }}
+		<div class="meta">
+			{{ .Params.sandwich }} -
+			{{ if .Params.price }}
+			{{ .Params.price }}
 			{{ end }}
 		</div>
-
+		{{ end }}
+		{{ if .Date }}
+		<div class="meta">Reviewed on
+			{{ dateFormat "January 2, 2006" .Date }}
+			{{ if .Params.eatenAt }}
+			at {{.Params.eatenAt}}
+			{{end}}
+			{{ if .Draft}}
+			, <span class="draft-label">DRAFT</span>
+			{{ end }}
+		</div>
+		<br/>
+		{{ end }}
 		<section class="body">
 			{{ .Content }}
 		</section>

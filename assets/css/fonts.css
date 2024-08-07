@@ -7,6 +7,15 @@
         url("../fonts/webfonts/Cooper-Regular.woff2") format("woff2"),
         url("../fonts/ttf/Cooper-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-display: swap;
+    font-family: "Cooper Italic";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-Italic.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-Italic.ttf") format("truetype");
+}
 
 @font-face {
     font-display: swap;
@@ -56,6 +65,16 @@
     src:
         url("../fonts/webfonts/Cooper-ExtraBold.woff2") format("woff2"),
         url("../fonts/ttf/Cooper-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Cooper ExtraBoldItalic";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("../fonts/webfonts/Cooper-ExtraBoldItalic.woff2") format("woff2"),
+        url("../fonts/ttf/Cooper-ExtraBoldItalic.ttf") format("truetype");
 }
 
 @font-face {

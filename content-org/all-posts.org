@@ -8,53 +8,219 @@
 :END:
 
 What is Sandwich Journal?
-* My first post :tag1:tag2:3sandwich:
+* Example Deli Name :sf:grilled_cheese:3sandwich:
+SCHEDULED: <2024-08-06 Tue>
 :PROPERTIES:
-:EXPORT_FILE_NAME: my-first-post
-:EXPORT_DATE: <2024-08-02 Fri>
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :won '(🥪🥪🥪) :lost '(🥪🥪) :location Test deli and street :location_href https://google.com/
+:EXPORT_FILE_NAME: template-post
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:  :locationShort San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :location 100 Market St, San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :locationHref https://google.com/
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :sandwich Test Grilled Cheese :price $22.25
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :won 🥪🥪🥪 :lost 🥪🥪
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :eatenAt Golden Gate Park
 :END:
+#+caption: A good sandwich or front of store
+[[./images/test.jpg]]
 #+begin_description
-
-And this can be over /multiple lines/ too!
+Good sandwich, good soda, but what about .... ?
 #+end_description
-hello
-** Test Hello &
-aaa
-#+name: fig__clickable_image_that_opens_the_image
-#+caption: caption
+#+begin_quote
+Previous visits: [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]]
+#+end_quote
+-----
+
+/Intro about sandwich shop/sandwich, why I'm Here etc./ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+** The Store
+/Talk about the store/ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+*** Other snacks/food/drinks/items for sale?
+/Talk about if there are things for sale that may increase the rating/
+**** Snack 1
+Something really important about a snack
+*** Neighborhood?
+
+#+caption: More images
 [[./images/test.jpg]]
 
-more!
-*** Subheading
-bbb
+/Talk about if there is anything interesting in the neighborhood/
+*** Seating/Ambiance?
+/Talk about if there is seating if any/
+*** Staff?
+/Talk about any notable staff interactions/
+** The Sandwich
+/Why I chose this sandwich, expectations from last sandwiches etc/ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+*** The Bread?
+/Is it good, etc/
+
+*** Other stuff
+/What came with it, condiments, warm or not etc/
+** Conclusion
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+* Example Deli Name 2 :sf:grilled_cheese:3sandwich:
+SCHEDULED: <2024-08-06 Tue>
+:PROPERTIES:
+:EXPORT_FILE_NAME: template-post-2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:  :locationShort San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :location 100 Market St, San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :locationHref https://google.com/
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :sandwich Test Grilled Cheese :price $22.25
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :won 🥪🥪🥪 :lost 🥪🥪
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :eatenAt Golden Gate Park
+:END:
+#+caption: A good sandwich or front of store
+[[./images/test.jpg]]
+#+begin_description
+Good sandwich, good soda, but what about .... ?
+#+end_description
+#+begin_quote
+Previous visits [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]]
+#+end_quote
+-----
 
 
+/Intro about sandwich shop/sandwich, why I'm Here etc./ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+** The Store
+/Talk about the store/ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+*** Other snacks/food/drinks/items for sale?
+/Talk about if there are things for sale that may increase the rating/
+**** Snack 1
+Something really important about a snack
+*** Neighborhood?
+
+#+caption: More images
+[[./images/test.jpg]]
+
+/Talk about if there is anything interesting in the neighborhood/
+*** Seating/Ambiance?
+/Talk about if there is seating if any/
+*** Staff?
+/Talk about any notable staff interactions/
+** The Sandwich
+/Why I chose this sandwich, expectations from last sandwiches etc/ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+*** The Bread?
+/Is it good, etc/
+
+*** Other stuff
+/What came with it, condiments, warm or not etc/
+** Conclusion
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+* Example Deli Name 3 :sf:grilled_cheese:3sandwich:
+SCHEDULED: <2024-08-06 Tue>
+:PROPERTIES:
+:EXPORT_FILE_NAME: template-post-3
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:  :locationShort San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :location 100 Market St, San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :locationHref https://google.com/
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :sandwich Test Grilled Cheese :price $22.25
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :won 🥪🥪🥪 :lost 🥪🥪
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :eatenAt Golden Gate Park
+:END:
+#+caption: A good sandwich or front of store
+[[./images/test.jpg]]
+#+begin_description
+Good sandwich, good soda, but what about .... ?
+#+end_description
+#+begin_quote
+Previous visits [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]]
+#+end_quote
+-----
+
+/Intro about sandwich shop/sandwich, why I'm Here etc./ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+** The Store
+/Talk about the store/ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+*** Other snacks/food/drinks/items for sale?
+/Talk about if there are things for sale that may increase the rating/
+**** Snack 1
+Something really important about a snack
+*** Neighborhood?
+
+#+caption: More images
+[[./images/test.jpg]]
+
+/Talk about if there is anything interesting in the neighborhood/
+*** Seating/Ambiance?
+/Talk about if there is seating if any/
+*** Staff?
+/Talk about any notable staff interactions/
+** The Sandwich
+/Why I chose this sandwich, expectations from last sandwiches etc/ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+*** The Bread?
+/Is it good, etc/
+
+*** Other stuff
+/What came with it, condiments, warm or not etc/
+** Conclusion
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+* Example Deli Name 4 :sf:grilled_cheese:3sandwich:
+SCHEDULED: <2024-08-06 Tue>
+:PROPERTIES:
+:EXPORT_FILE_NAME: template-post-4
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER:  :locationShort San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :location 100 Market St, San Francisco, CA
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :locationHref https://google.com/
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :sandwich Test Grilled Cheese :price $22.25
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :won 🥪🥪🥪 :lost 🥪🥪
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :eatenAt Golden Gate Park
+:END:
+#+caption: A good sandwich or front of store
+[[./images/test.jpg]]
+#+begin_description
+Good sandwich, good soda, but what about .... ?
+#+end_description
+#+begin_quote
+Previous visits [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]], [[/posts/visit][sandwich name]]
+#+end_quote
+-----
+
+/Intro about sandwich shop/sandwich, why I'm Here etc./ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+** The Store
+/Talk about the store/ It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+*** Other snacks/food/drinks/items for sale?
+/Talk about if there are things for sale that may increase the rating/
+**** Snack 1
+Something really important about a snack
+*** Neighborhood?
+
+#+caption: More images
+[[./images/test.jpg]]
+
+/Talk about if there is anything interesting in the neighborhood/
+*** Seating/Ambiance?
+/Talk about if there is seating if any/
+*** Staff?
+/Talk about any notable staff interactions/
+** The Sandwich
+/Why I chose this sandwich, expectations from last sandwiches etc/ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+*** The Bread?
+/Is it good, etc/
+
+*** Other stuff
+/What came with it, condiments, warm or not etc/
+** Conclusion
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 * TODO My second post :tag1:@category2:
+SCHEDULED: <2024-08-07 Wed>
 :PROPERTIES:
 :EXPORT_FILE_NAME: my-second-post
-:EXPORT_DATE: <2024-08-02 Fri>
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :location Test deli and street :location_href https://google.com/
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :price $22.25
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :won 🥪🥪🥪 :lost 🥪🥪
 :END:
 This is my post body
 ** Hello
+
+
 aaa
 *** Subheading
 bbb
-
-* Notes
-:PROPERTIES:
-:EXPORT_HUGO_SECTION: notes
-:END:
-** Rating Guidelines
-:PROPERTIES:
-:EXPORT_FILE_NAME: rating-guidelines
-:END:
-In general, we'll rate x/y sandwiches, but for different food, we may do a different icon
-
-Handicaps will be added for:
- * ??
-
-Example way to set rating:
-#+begin_src org
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :won '(🥪🥪🥪) :lost '(🥪🥪) :location Test deli :location_href https://google.com/
-#+end_src
