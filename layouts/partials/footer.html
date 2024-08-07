@@ -12,8 +12,8 @@
     Built with love
   </div>
 </footer>
-{{ if not hugo.IsServer }} {{ template "_internal/google_analytics.html" . }} {{
-end }} {{- if (isset .Site.Params "social") -}}
+{{ template "_internal/google_analytics.html" . }} {{- if (isset .Site.Params
+"social") -}}
 <script>
   feather.replace();
 </script>
