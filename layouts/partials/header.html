@@ -17,20 +17,16 @@
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 	<meta property="og:image" content="{{ .Site.Params.og_image }}"/>
 	{{ with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
-	{{ if and (isset .Site.Params "social") (.Site.Params.useCDN | default false) -}}
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	{{- else if isset .Site.Params "social"  -}}
-		<script src="{{ absURL "js/feather.min.js" }}"></script>
-	{{ end }}
+	<script src="{{ relURL "js/feather.min.js" }}"></script>
 
 	{{ $fontstyle := resources.Get "css/fonts.css" | fingerprint }}
-        <link href="{{ $fontstyle.Permalink }}" rel="stylesheet">
+        <link href="{{ $fontstyle.RelPermalink }}" rel="stylesheet">
 
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.RelPermalink }}" />
 
 	<!-- Mathjax support -->
 	{{ with .Site.Params.mathjax }}
@@ -79,7 +75,7 @@
 	{{- else if (hasPrefix . "<script")}}
     {{ .| safeHTML }}
 	{{- else }}
-	<script src="{{ absURL . }}"></script>
+	<script src="{{ relURL . }}"></script>
 	{{- end }}
 	{{- end }}
 </head>

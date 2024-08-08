@@ -1,14 +1,10 @@
 <header>
 	<div class="main">
-		<a href="{{ absURL "/" }}">{{ .Site.Title }}</a>
+		<a href="{{ relURL "/" }}"><i>{{ .Site.Title }}</i></a>
 	</div>
 	<nav>
 		{{ range .Site.Menus.main }}
-		<a class="menu" href="{{ .URL }}">{{ .Name }}</a>
-		{{ end }}
-		{{ if eq .Site.Params.mode "toggle" -}}
-        | <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
-		<script src="{{ absURL "js/themetoggle.js" }}"></script>
+		<a class="menu" href="{{ .URL }}"><i>{{ .Name }}</i></a>
 		{{ end }}
 	</nav>
 </header>
