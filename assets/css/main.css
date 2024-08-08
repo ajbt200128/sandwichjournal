@@ -194,6 +194,10 @@ h6::before {
   content: "❧❧❧❧❧ ";
 }
 
+.list-item {
+  margin-bottom: 0.5em;
+}
+
 .meta {
   font-size: 1em;
   color: #999;
@@ -206,6 +210,7 @@ h6::before {
 
 .meta .location {
   font-family: "Cooper MediumItalic";
+  margin-bottom: 0.3em;
 }
 
 .rating {
@@ -274,11 +279,12 @@ time {
   text-decoration-thickness: 1px;
 }
 .menu {
-  font-family: "Cooper ExtraBold";
+  font-family: "Cooper SemiBold";
   text-decoration-thickness: 2px;
 }
 /* Posts */
 .title {
+  font-family: "Cooper SemiBold";
   margin-bottom: 0.3em;
 }
 .site-description {
