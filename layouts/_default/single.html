@@ -9,12 +9,18 @@
 		<div class="title">
 			<h1 class="title">
 				{{ .Title }}
+				{{ if .Draft}}
+				<span class="draft-label">DRAFT</span>
+				{{ end }}
 			</h1>
 		</div>
 		{{ if (and (.Params.location) (.Params.locationHref)) }}
 		<div class="meta">
-			<a href={{.Params.locationHref}}
-			target="_blank">{{.Params.location}}</a>
+			<div class="location">
+				<a href="{{.Params.locationHref}}" target="_blank">
+					<i>{{.Params.location}}</i>
+			</a>
+			</div>
 		</div>
 		{{ end }}
 
@@ -27,14 +33,12 @@
 		</div>
 		{{ end }}
 		{{ if .Date }}
-		<div class="meta">Reviewed on
+		<div class="meta">
+			Reviewed on
 			{{ dateFormat "January 2, 2006" .Date }}
 			{{ if .Params.eatenAt }}
 			at {{.Params.eatenAt}}
 			{{end}}
-			{{ if .Draft}}
-			, <span class="draft-label">DRAFT</span>
-			{{ end }}
 		</div>
 		<br/>
 		{{ end }}

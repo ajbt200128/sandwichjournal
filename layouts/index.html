@@ -25,14 +25,21 @@
 					<div class="title">
 						<h1>
 							<a href="{{ .RelPermalink}}">{{.Title}}</a>
+
+							{{ if .Draft}}
+							<span class="draft-label">DRAFT</span>
+							{{ end }}
 						</h1>
 					</div>
-					{{ if .Params.location }}
-					<div class="subtitle meta">{{.Params.locationShort}}</div>
-					{{ end }} {{ if .Params.sandwich }}
-					<div class="meta">{{ .Params.sandwich }}</div>
-					{{ end }} {{ template "partials/pagedescription.html" . }}
-					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+					<div class="subtitle meta">
+						{{ if .Params.location }}
+						<div class="location"><i>{{.Params.locationShort}}</i></div>
+						{{ end }} {{ if .Params.sandwich }}
+						<div>{{ .Params.sandwich }}</div>
+						{{ end }}
+					</div>
+					{{ template "partials/pagedescription.html" . }}
+					<a class="readmore" href="{{ .RelPermalink }}"><i>Read more</i> ⟶</a>
 				</section>
 
 				<br />

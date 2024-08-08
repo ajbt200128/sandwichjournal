@@ -1,6 +1,6 @@
 @font-face {
     font-display: swap;
-    font-family: "Cooper Regular";
+    font-family: "Cooper";
     font-style: normal;
     font-weight: 400;
     src:
@@ -9,9 +9,9 @@
 }
 @font-face {
     font-display: swap;
-    font-family: "Cooper Italic";
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Cooper";
+    font-style: italic;
+    font-weight: 600;
     src:
         url("../fonts/webfonts/Cooper-Italic.woff2") format("woff2"),
         url("../fonts/ttf/Cooper-Italic.ttf") format("truetype");
@@ -29,8 +29,8 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Cooper MediumItalic";
-    font-style: normal;
+    font-family: "Cooper Medium";
+    font-style: italic;
     font-weight: 400;
     src:
         url("../fonts/webfonts/Cooper-MediumItalic.woff2") format("woff2"),
@@ -49,7 +49,7 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Cooper SemiBoldItalic";
+    font-family: "Cooper SemiBold";
     font-style: italic;
     font-weight: 400;
     src:
@@ -69,8 +69,8 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Cooper ExtraBoldItalic";
-    font-style: normal;
+    font-family: "Cooper ExtraBold";
+    font-style: italic;
     font-weight: 400;
     src:
         url("../fonts/webfonts/Cooper-ExtraBoldItalic.woff2") format("woff2"),
@@ -89,8 +89,8 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Cooper BlackItalic";
-    font-style: normal;
+    font-family: "Cooper Black";
+    font-style: italic;
     font-weight: 400;
     src:
         url("../fonts/webfonts/Cooper-BlackItalic.woff2") format("woff2"),
